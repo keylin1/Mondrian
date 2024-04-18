@@ -3,9 +3,9 @@
 
 var barX = 240;
 var barY = 600;
+var stroke = 50;
 var pageHeight = 1500;
 var pageWidth = 2500;
-var stroke = 50;
 
 var canvas = document.getElementById('creativeCoding');
 var ctx = canvas.getContext('2d');
