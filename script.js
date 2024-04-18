@@ -1,11 +1,8 @@
-// screensize 938 x 755
-
-
 var barX = 240;
 var barY = 600;
-var stroke = 50;
 var pageHeight = 1500;
 var pageWidth = 2500;
+var stroke = 50;
 
 var canvas = document.getElementById('creativeCoding');
 var ctx = canvas.getContext('2d');
@@ -43,7 +40,7 @@ function draw() {
     ctx.fillRect( 0 , barY, pageWidth, stroke );
     ctx.fillRect(0, 200 , barY, stroke+30); 
     ctx.fillRect(1400, barY, stroke, barY + pageHeight );
-    ctx.fillRect(1400, barY+150, pageWidth, stroke);
+    ctx.fillRect(1400, barY+150, pageWidth, stroke-10);
     
     // Red
     ctx.fillStyle = 'rgb(255, 0, 0)'; 
@@ -55,7 +52,7 @@ function draw() {
 
     // Yellow
     ctx.fillStyle = 'rgb(250, 235, 125)'; 
-    ctx.fillRect( 1400+stroke, barY+200, pageWidth, pageHeight);
+    ctx.fillRect( 1400+stroke, barY+190, pageWidth, pageHeight);
 
     }
   }
